@@ -1,0 +1,83 @@
+RENTAL SHOP MANAGEMENT SYSTEM — ENGLISH EDITION
+=================================================
+
+OPEN THE SOFTWARE
+Double-click index.html, or right-click it and choose Open with > Google Chrome.
+No installation, internet, subscription or Microsoft Access is required.
+Keep index.html, style.css and ALL .js files together in the same folder.
+
+GET STARTED
+1. Open Settings and enter your organization name, address and contact details.
+2. Add shops, including shop number, business type, block and floor.
+3. Add tenants and their contact details.
+4. Create rental contracts with start/end dates and monthly rent.
+5. Choose a reporting month at the top of the screen.
+6. Record rent payments in Rent Collection; print the generated receipt.
+
+MENUS
+Dashboard: totals, collection chart, occupancy, expiries, arrears, payments,
+notifications, expenses, block/floor summary and quick actions.
+Shops: add/edit shops, track vacant and rented units, business types.
+Tenants: add/edit tenant directory, contact details, ID and address.
+Contracts: create agreements, track dates, deposit reference and due day.
+Rent Collection: full/partial payments, Received/Pending filters, rent bills.
+Receipts: print rent receipts and void incorrect payments with a reason.
+Outstanding: unpaid months through the reporting month and collection actions.
+Notices & Reminders: automatic drafts when opening this menu; view, edit,
+save, print, and manually mark as delivered. No email or SMS is sent.
+Renewal & Increase: renew contracts and schedule effective-month increases.
+Expenses & Maintenance: costs, categories, vendors, properties and job status.
+Utilities: electricity/water/gas/service bills, payment records and receipts.
+Reports: rent, payments, outstanding, expenses and utilities; CSV and print/PDF.
+Settings: organization preferences, JSON backup/restore and demo workspace.
+
+KEEP YOUR RECORDS SAFE
+Data is saved only in the current browser profile for this file location.
+This is an offline, single-user app; it has no shared database or login.
+Use Backup regularly. Clearing browser data may remove your records.
+Moving or renaming the HTML file, or switching browsers, may make your existing
+records unavailable until you restore a JSON backup.
+
+MOVE TO ANOTHER PC
+1. Download a JSON backup from the current app before transferring.
+2. Copy the entire application folder and your JSON backup to the other PC.
+3. Open index.html in Chrome and use Settings > Restore JSON Backup.
+4. Select your backup and confirm. Restoring replaces the current workspace.
+Changes on separate PCs do not synchronize automatically.
+
+ORIGINAL URDU DATA
+The old Urdu app is preserved as urdu-original.html.
+When index.html stays in the original folder and browser, the English app
+attempts to import the old Urdu app's saved local data on its first opening.
+You can also restore an original Urdu JSON backup using Settings.
+Microsoft Access .accdb and .mdb files are not supported.
+
+ACCOUNTING RULES
+- Full monthly rent applies to first and last contract months; no daily proration.
+- A shop cannot have two contracts within the same billing month.
+- Renewals default to the first day of the month after the old contract ends.
+- Monthly collection totals use the billing month, not cash receipt date.
+- Outstanding includes unpaid rental months from contract start through the
+  selected reporting month. Utilities are listed separately.
+- Receipts retain the tenant/shop names as they were at payment time.
+- Void payments stay in the audit history and restore outstanding rent.
+- Increases cannot change months for which payment records already exist.
+- Deposit is a reference amount, not a record of deposit payment.
+- Net rental income is collected rent less recorded operating expenses.
+  Security deposits and utility collections are excluded from this number.
+- Utility collections record full bill payment. Supplier costs can be entered
+  separately under Expenses.
+
+DEMO
+The first dashboard offers Explore demo data. All demo records are fictional.
+Loading demo data replaces the current workspace after confirmation. Back up
+real records first. Use Settings > Start empty workspace to start real entry.
+
+PRINT
+Open a receipt, bill, agreement, reminder or report, then click Print / Save PDF.
+In Chrome's print screen select your printer or Save as PDF.
+
+SOURCE CODE
+The source is split into index.html, style.css and separate feature .js files.
+Open the whole folder in Visual Studio Code. See CODE-GUIDE.md for the file map.
+

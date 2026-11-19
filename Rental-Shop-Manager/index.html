@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Offline shop rental management: contracts, rent, receipts, notices, expenses and reports.">
+<title>Rental Shop Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar">
+<div class="brand">
+<div class="brand-icon" id="brandIcon">
+</div>
+<div>Rental Shop<br>Management System<small>Manage · Track · Grow</small>
+</div>
+</div>
+<nav id="nav" aria-label="Main navigation">
+</nav>
+<div class="sidebar-foot">
+<span class="online">
+</span> Offline workspace<small>Saved on this browser · Back up often</small>
+</div>
+</aside>
+<div class="workspace">
+<header>
+<div class="heading">
+<button class="icon-button mobile" onclick="document.body.classList.toggle('menu-open')" aria-label="Toggle menu">☰</button>
+<div>
+<h1 id="pageTitle">Dashboard</h1>
+<p id="subtitle">Welcome back! Here's an overview of your rental properties.</p>
+</div>
+</div>
+<div class="header-right">
+<div class="today" id="today">
+</div>
+<button class="bell icon-button" onclick="go('notices')" aria-label="View reminders" id="bell">
+</button>
+<button class="profile" onclick="go('settings')">
+<span class="avatar">A</span>
+<span id="adminLabel">Admin</span>
+<span>⌄</span>
+</button>
+</div>
+</header>
+<div class="org" id="org">
+</div>
+<div class="context-bar">
+<div>
+<span class="context-label">Reporting month</span>
+<input type="month" id="month" aria-label="Reporting month" onchange="render()">
+</div>
+<label class="search">
+<span>⌕</span>
+<input id="search" placeholder="Search this page…" oninput="render()" aria-label="Search this page">
+</label>
+<button class="btn subtle" onclick="backup()">↓ Backup</button>
+<button class="btn primary" id="primaryAction" onclick="openForm('shop')">＋ Add New Shop</button>
+</div>
+<div id="storageWarning" role="alert">
+</div>
+<main id="main">
+</main>
+<footer>Rental Shop Management System <span>Local data · No automatic cloud sync · <button class="text-btn" onclick="go('settings')">Backup & settings</button>
+</span>
+</footer>
+</div>
+<dialog id="formDialog">
+<div class="dialog-head">
+<div>
+<h2 id="formTitle">
+</h2>
+<p id="formDescription">
+</p>
+</div>
+<button class="icon-button" onclick="closeForm()" aria-label="Close dialog">✕</button>
+</div>
+<form id="editor">
+<div id="fields" class="form-grid">
+</div>
+<p class="form-error" id="formError" role="alert">
+</p>
+<div class="dialog-actions">
+<button type="button" class="btn" onclick="closeForm()">Cancel</button>
+<button class="btn primary" type="submit">Save record</button>
+</div>
+</form>
+</dialog>
+<dialog id="paperDialog">
+<div class="paper-tools">
+<div>
+<b id="paperTitle">Document</b>
+<small>Edit the text before printing, if needed.</small>
+</div>
+<button class="btn primary" onclick="window.print()">Print / Save PDF</button>
+<button class="btn" id="saveNotice" hidden>Save draft</button>
+<button class="icon-button" onclick="document.getElementById('paperDialog').close()" aria-label="Close document">✕</button>
+</div>
+<article id="paper" contenteditable="true" aria-label="Editable document">
+</article>
+</dialog>
+<input id="restoreFile" type="file" accept=".json,application/json" hidden onchange="restoreBackup(event)">
+<div id="toast" role="status">
+</div>
+<script src="core.js">
+</script>
+<script src="icons.js">
+</script>
+<script src="ui.js">
+</script>
+<script src="auth.js">
+</script>
+<script src="dashboard.js">
+</script>
+<script src="shop.js">
+</script>
+<script src="tenant.js">
+</script>
+<script src="contract.js">
+</script>
+<script src="payment.js">
+</script>
+<script src="notice.js">
+</script>
+<script src="expense.js">
+</script>
+<script src="utility.js">
+</script>
+<script src="report.js">
+</script>
+<script src="settings.js">
+</script>
+<script src="demo.js">
+</script>
+<script src="forms.js">
+</script>
+<script src="app.js">
+</script>
+</body>
+</html>
